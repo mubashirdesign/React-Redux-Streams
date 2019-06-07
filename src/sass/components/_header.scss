@@ -1,0 +1,49 @@
+.header {
+    background-color: rgb(224, 224, 224);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+    color: white;
+
+    @media only screen and (max-width: $bp-extrasmall) {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+      }
+
+    &__cta {
+        display: flex;
+        align-items: center;
+        
+        & > * {
+            margin: 2rem;
+            cursor: pointer;
+        }
+
+        &--link {
+            font-size: 2rem;
+            color: rgb(80, 80, 80);
+        }
+
+        &--signIn {
+            cursor: inherit;
+            color: inherit;
+            padding: 1rem 2rem;
+            text-transform: uppercase;
+            border-radius: 2px;
+            background-color: rgb(133, 133, 133);
+        }
+
+        &--signOut {
+            cursor: inherit;
+            color: inherit;
+            padding: 1rem 2rem;
+            text-transform: uppercase;
+            border-radius: 2px;
+            background-color: rgb(192, 46, 46);
+        }
+    }
+}

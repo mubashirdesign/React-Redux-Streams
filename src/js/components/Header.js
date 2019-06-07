@@ -4,14 +4,16 @@ import GoogleAuth from './GoogleAuth';
 
 const Header = () => {
     return (
-        <div>
+        <div className="header">
            <Link to="/" >
                Streamer
            </Link>
-           <Link to="/">
+           <div className="header__cta">
+           <Link className="header__cta--link" to="/">
                All Streams
            </Link>
            <GoogleAuth />
+           </div>
         </div>
     );
 }
