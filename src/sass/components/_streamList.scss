@@ -1,0 +1,16 @@
+.streamList {
+    padding: 10rem;
+
+    &__item {
+        padding: 1rem;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            padding: 1rem;
+            margin: 1rem;
+        }
+    }
+}
